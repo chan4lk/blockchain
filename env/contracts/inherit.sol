@@ -13,4 +13,8 @@ contract A {
 
 contract B is A {
     uint public y = f();
+
+    function f2() public view returns(uint256) {
+        return y;
+    }
 }
